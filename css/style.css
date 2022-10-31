@@ -1,5 +1,5 @@
 body{
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 @keyframes fadein{
     from {opacity: 0;}
@@ -64,19 +64,23 @@ img{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items:center;
+        flex-wrap:wrap;
     }
     .nav_links{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
     .pricing{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items:stretch;
+        justify-content: center;
     }
     .card{
         width: 300px;
+        height: auto;
     }
     .gallery{
         display: flex;
