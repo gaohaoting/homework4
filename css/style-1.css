@@ -1,0 +1,86 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+}
+@keyframes fadein{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#logo{
+    animation: fadein 3s;
+}
+@media(prefers-reduce){
+#logo{
+    animation:none;
+}
+}
+/* Mobile view*/
+header img{
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 100%;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}
+
+/* Desktop view*/
+@media screen and (min-width:700px) {
+    header img{
+        width: 400px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+    }
+    .pricing{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 300px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    img{
+        width: 300px;
+    }
+}
